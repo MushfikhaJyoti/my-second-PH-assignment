@@ -5,6 +5,9 @@
 *{
     margin: 0;
 }
+.text-center{
+    text-align: center;
+}
 body {
     font-family: "Inter", sans-serif;
     background-color: rgb(0, 0, 0);
@@ -21,8 +24,12 @@ h3{
     font-size: 3rem;
     font-weight: 900;
 }
-p{
+p{ 
+    margin-top: 5px;
     color: rgba(255, 255, 255, 0.5);
+}
+h4{
+    color: rgb(255, 255, 255);  
 }
 .btn-primary{
     padding: 16px 45px;
@@ -151,6 +158,32 @@ i{
     color: white;
 }
 
+/* Change habit section styling */
+.heading-text {
+    margin-top: 120px;
+    margin-bottom: 35px;
+}
+
+/* .heading-description{
+    width: 670px;
+    height: 120px;
+} */
+.habit-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.habit-img img{
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 30px;
+   }
+   .habit-card{
+    width:230px;
+    height: 275px;
+    margin-bottom: 30px;
+   }
+
  /* responsive styles */
  /* mobile device */
  @media screen and (max-width: 576px){
@@ -161,7 +194,7 @@ i{
         display: block;
     
      }
-     .Banner-section{
+     .Banner-section, .habit-img {
         display: flex;
         flex-direction: column;
      }
@@ -176,4 +209,5 @@ i{
      .btn-primary, .button{
         padding: 12px 20px;
      }
+   
  }
