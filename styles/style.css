@@ -8,13 +8,10 @@
 .text-center{
     text-align: center;
 }
-body {
-    font-family: "Inter", sans-serif;
-    background-color: rgb(0, 0, 0);
-    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
-    border-radius: 5px;
-     
-}
+body{
+ font-family: "Inter", sans-serif;
+ background-color: black;
+     }
 .container{
     width: 80%;
     margin: 5rem auto;
@@ -23,15 +20,22 @@ h3{
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 900;
+    padding-bottom: 10px;
+   
 }
 p{ 
+    text-align: left;
     margin-top: 5px;
     color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-bottom: 20px;
 }
 h4{
     color: rgb(255, 255, 255);  
 }
 .btn-primary{
+    width: 224px;
     padding: 16px 45px;
     background-color:rgb(230, 83, 60);
     border: 1px solid rgb(230, 83, 60);
@@ -184,6 +188,100 @@ i{
     margin-bottom: 30px;
    }
 
+   /* run-extra-mile section styling */
+   .run-extra{
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 600px;
+    padding: 30px 25px;
+       }
+   .run-extra-text-des{
+    margin: 30px 30px;
+ 
+      }
+   .run-extra-img img{
+    width: 430px;
+    height: 350px;
+    border-radius: 18px;
+         }
+
+
+
+/* BMI Calculator section styling */
+    .text-heading{
+        width: 670px;
+        height: 120px;
+        margin: 90px auto;
+    }
+    .table-chart h3, .calculator h3{
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding-bottom: 10px;
+    }
+            
+    .input-box{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 10px;
+        align-items: center;
+        width: 570px;
+        height: 185px;
+    }  
+   .activity-input{
+    width: 610px;
+   }
+         table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid rgb(255, 255, 255,10%);
+            padding: 15px;
+      
+        }
+        .BMI-calculator tr { 
+            color: rgb(255, 255, 255, 0.5);
+
+        }
+        
+    .BMI-calculator{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255,10%);
+       
+    }
+    input,select{
+        border: none;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+    }
+    ::placeholder{
+        color: rgba(255, 255, 255, 0.6);
+    }
+    table{
+        margin-top: 30px;
+    }
+    .table-chart{
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .calculator{
+         margin-right: 200px;
+         margin-top: 40px;
+         margin-bottom: 40px;
+                
+    }
+   
+    
+    
+
+
  /* responsive styles */
  /* mobile device */
  @media screen and (max-width: 576px){
@@ -194,7 +292,7 @@ i{
         display: block;
     
      }
-     .Banner-section, .habit-img {
+     .Banner-section, .habit-img,  .run-extra,  .BMI-calculator {
         display: flex;
         flex-direction: column;
      }
@@ -209,5 +307,34 @@ i{
      .btn-primary, .button{
         padding: 12px 20px;
      }
-   
- }
+     .run-extra{
+        gap: 10px;
+     }
+     .run-extra-img img{
+        width: 350px;
+        height: 300px;
+    }
+    .table-chart, .calculator{
+        width: 300px;
+    }
+    .input-box{
+        grid-template-columns: repeat(2, 230px);
+       width: 290px;
+        height: 185px;
+    }
+    .activity-input{
+        width: 470px;
+       }  
+       .text-heading{
+        width: 370px;
+        height: 120px;
+        margin: 90px auto;
+    }
+       .table-chart{
+        margin: 40px 50px;
+    }
+    .calculator{
+        margin: 40px 30px;
+         
+    }
+}
