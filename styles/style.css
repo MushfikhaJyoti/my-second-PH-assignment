@@ -277,6 +277,45 @@ i{
          margin-bottom: 40px;
                 
     }
+/* Team Section styling */
+.team{
+    width: 60%;
+    margin: 5.5rem auto;
+}
+.team-heading{
+    margin: 30px auto;
+  text-align: center;
+}
+.team-heading p{
+    text-align: center;
+}
+.team-img img{
+    width: 325px;
+    height: 270px;
+    border-radius: 16px;
+}
+.team-img{
+    gap: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 20px;
+}
+.row-two, .row-one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.img-card{
+    position: relative;
+}
+.text-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, 45%);
+}
    
     
     
@@ -292,7 +331,7 @@ i{
         display: block;
     
      }
-     .Banner-section, .habit-img,  .run-extra,  .BMI-calculator {
+     .Banner-section, .habit-img,  .run-extra,  .BMI-calculator,.row-two, .row-one, .team {
         display: flex;
         flex-direction: column;
      }
@@ -336,5 +375,14 @@ i{
     .calculator{
         margin: 40px 30px;
          
+    }
+    .team-img{
+        width: 100%;
+       height: 100%px;
+        gap: 10px;
+    }
+   
+    .row-one,.row-two{
+        gap: 20px;
     }
 }
