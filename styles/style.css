@@ -316,6 +316,52 @@ i{
     left: 50%;
     transform: translate(-130%, 45%);
 }
+/* Footer Section Styling */
+.communication h4{
+    font-size: 2rem;
+}
+.communication p{
+    font-size: 1.4rem;
+}
+.font-size{
+    color: rgb(230, 83, 60);
+    font-size: 4.3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.brand-box{
+    width: 25%;
+    margin: 60px 200px;
+}
+.footer-section {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.footer{
+    background-color: rgb(255, 255, 255,10%);
+ 
+}
+.communication{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+
+}
+.communication-box{
+    margin: 60px 150px;
+}
+hr{
+    margin: 40px auto;
+    color: rgba(255, 255, 255, 0.5);
+}
+.copy-right{
+    text-align: center;
+    font-size: 20px;
+    
+}
    
     
     
@@ -331,7 +377,7 @@ i{
         display: block;
     
      }
-     .Banner-section, .habit-img,  .run-extra,  .BMI-calculator,.row-two, .row-one, .team {
+     .Banner-section, .habit-img,  .run-extra,  .BMI-calculator,.row-two, .row-one, .team,.footer-section,.communication {
         display: flex;
         flex-direction: column;
      }
@@ -358,7 +404,7 @@ i{
     }
     .input-box{
         grid-template-columns: repeat(2, 230px);
-       width: 290px;
+       width: 250px;
         height: 185px;
     }
     .activity-input{
@@ -384,5 +430,11 @@ i{
    
     .row-one,.row-two{
         gap: 20px;
+    }
+    .brand-box{
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 60px;
+        margin-left: 0px;
     }
 }
