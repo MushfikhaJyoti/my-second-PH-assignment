@@ -410,9 +410,12 @@ hr{
         width: 300px;
     }
     .input-box{
-        grid-template-columns: repeat(2, 230px);
-       width: 250px;
-        height: 185px;
+        grid-template-columns: repeat(2, 200px);
+        width: 220px;
+        height: 220px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 28px;
     }
     .activity-input{
         width: 470px;
@@ -422,8 +425,12 @@ hr{
         height: 120px;
         margin: 90px auto;
     }
-       .table-chart{
+    .table-chart{
         margin: 40px 50px;
+    }
+    .BMI-heading{
+        width: 570px;
+        height: 96px;
     }
     .calculator{
         margin: 40px 30px;
@@ -434,6 +441,20 @@ hr{
     }
     .team-img{
              gap: 10px;
+             padding: 5px 5px;
+    }
+    /* .team-img{
+        gap: 30px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        
+      } */
+      .team-img img{
+        width: 325px;
+        height: 270px;
+        border-radius: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
    
     .row-one,.row-two{
